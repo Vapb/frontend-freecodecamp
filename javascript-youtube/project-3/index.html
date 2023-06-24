@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-3</title>
+</head>
+<body>
+    <h1>Project-3</h1>
+    <script>
+        var user_input = window.prompt('Write something here!');
+        document.writeln(`You write : ${user_input}`); 
+        document.writeln(`Length of input : ${user_input.length}`); 
+        document.writeln(`Lowercase : ${user_input.toLowerCase()}`); 
+        document.writeln(`Upppercasem  : ${user_input.toUpperCase()}`); 
+        var user_salary = Number(window.prompt('What is your salary ?'));
+        document.writeln(user_salary.toLocaleString('pt-BR', {style: 'currency', currency:  'BRL'}))
+    </script>
+</body>
+</html>  k

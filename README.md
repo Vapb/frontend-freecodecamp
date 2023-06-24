@@ -1,5 +1,5 @@
 # frontend-freecodecamp
 
-## responsive web design 2/5
+## Responsive web design 2/5
 
-## javascript youtube tutorial 3/6
+## Javascript youtube tutorial 3/6

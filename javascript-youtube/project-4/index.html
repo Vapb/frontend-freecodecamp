@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-4</title>
+    <style>
+        body{
+            background-color: gray;
+            color: aliceblue;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 id="title">Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo  a usar o <strong>DOM</strong> em Javascript</p>
+    <div id=msg >Clique em mim</div>
+    <hr>
+    <script>
+        window.document.write('Your URL : ' + window.document.URL + '<br >')
+        var p1 = document.getElementsByTagName('p')[0]
+        document.writeln('First tag p : ' + p1.innerText + '<br >')
+        //p1.style.color = 'blue'
+        //document.body.style.background = 'black'
+        var msg = document.getElementById('msg')
+        msg.style.background = 'green'
+        msg.innerText = 'Estou aguardando... '
+        //querySelector
+        var title = document.querySelector('h1#title')
+        document.writeln('This is the title : ' + title.innerText)
+        
+    </script>
 </body>
 </html>

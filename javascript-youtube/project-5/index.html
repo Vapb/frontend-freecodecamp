@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-5</title>
+    <style>
+        div#area{
+            background-color: green;
+            color: white;
+            font-size: 40px;
+            width: 50%;
+            padding: 30px;
+            text-align: center;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id='area' onclick="clicar()" onmouseenter="enter()" onmouseout="leave()"> -->
+    <div id='area'>
+        Interaja ...
+    </div>
+
+    <script>
+        var area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', enter)
+        area.addEventListener('mouseout', leave)
+
+        function clicar() {
+            area.innerText = "Clicou !"
+            area.style.backgroundColor = 'blue'
+        }
+
+        function enter() {
+            area.innerText = "Entrou !"
+        }
+
+        function leave() {
+            area.innerText = "Saiu :c"
+            area.style.backgroundColor = 'green'
+        }
+
+    </script>
+</body>
+</html>

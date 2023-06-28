@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando dois numeros</title>
+</head>
+<body>
+    <h1 id="title">Somando dois numeros</h1>
+    <div>
+        <input type="text" id="txt_1"> + 
+        <input type="text" id="txt_2">
+        <input type="button" value="DONE" id="result"> 
+    </div>
+    <div>
+        Resultado : <span id="resultado"> ... </span>
+    </div>
+    <script>
+        var resultado = document.getElementById('resultado') 
+        var result = document.getElementById('result')
+        result.addEventListener('click', somar)
+        
+        function somar() {
+            var txt_1 = Number(document.getElementById('txt_1').value)
+            var txt_2 = Number(document.getElementById('txt_2').value)
+            resultado.innerText = `${txt_1} + ${txt_2} = ${txt_1 + txt_2}`
+        }
+
+    </script>
+    
+</body>
+</html>

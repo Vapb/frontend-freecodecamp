@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exercise-4 - AddingElements</h1>
+    </header>
+
+    <button onclick="add_element()">Add Element</button>
+
+    <section id="my_section">
+        <div>AAA</div>
+        <div>AAA</div>
+        <div>AAA</div>
+        <div>AAA</div>
+    </section>
+    
+    <footer>
+        <p>&copy; VideoTutorial</p>
+    </footer>
+
+    <script>
+        function add_element() {
+            var my_section = document.getElementById('my_section')
+            console.log('add_element function')
+            var newNode = document.createElement('div')
+            newNode.appendChild(document.createTextNode('text added by my function'))
+            my_section.appendChild(newNode);
+        }
+    </script>
+</body>
+</html>

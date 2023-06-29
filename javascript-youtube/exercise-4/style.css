@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(107, 107, 241);
+    font: normal 15pt Arial;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    min-height: 200px;
+    width: 50%;
+    text-align: center;
+}
+
+section div {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    width: 25%;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+}

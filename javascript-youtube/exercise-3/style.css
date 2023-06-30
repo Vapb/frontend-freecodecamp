@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(128, 72, 202);
+    font: normal 15pt Arial;
+    color: white
+}
+
+h1#title {
+    text-align: center;
+}
+
+section#calculadora{
+    margin: auto;
+    padding: 10px;
+    width: 35%;
+    min-height: 100px;
+    min-width: 300px;
+    background-color: azure;
+    border: 3px solid rgb(70, 35, 112);
+    border-radius: 1%;
+    color: black;
+}
+
+div#inputs {
+    text-align: center;
+}
+
+div#inputs input {
+    text-align: center;
+    font-size: 13px;
+    margin: 1%;
+    width: 23%;
+}
+
+div#inputs select {
+    text-align: center;
+    font-size: 13px;
+    margin: 1%;
+    width: 23%;
+}
+
+input#compute {
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
+div#campo_resultado {
+    text-align: center;
+}

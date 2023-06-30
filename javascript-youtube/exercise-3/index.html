@@ -3,30 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Exercise-3</title>
 </head>
 <body>
-    <h1 id="title">Exercise-3 - Somando dois numeros</h1>
-    <div>
-        <input type="text" id="txt_1"> + 
-        <input type="text" id="txt_2">
-        <input type="button" value="DONE" id="result"> 
-    </div>
-    <div>
-        Resultado : <span id="resultado"> ... </span>
-    </div>
+    <h1 id="title">Exercise-3 - Calculadora</h1>
+
+    <section id="calculadora">
+        <div id="inputs">
+            <input type="number" id="number_1" class="number_input">
+            <select id="operations">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" id="number_2" class="number_input">   
+        </div>
+        
+        <input type="button" value="COMPUTE!" id="compute"> 
+        
+        <div id="campo_resultado">
+            Resultado : <span id="resultado"> ... </span>
+        </div>
+    </section>
+
     <script>
         var resultado = document.getElementById('resultado') 
-        var result = document.getElementById('result')
-        result.addEventListener('click', somar)
+        var compute = document.getElementById('compute')
+        compute.addEventListener('click', calc)
         
-        function somar() {
-            var txt_1 = Number(document.getElementById('txt_1').value)
-            var txt_2 = Number(document.getElementById('txt_2').value)
-            resultado.innerText = `${txt_1} + ${txt_2} = ${txt_1 + txt_2}`
+        function calc() {
+            var numb1 = Number(document.getElementById('number_1').value)
+            var numb2 = Number(document.getElementById('number_2').value)
+            var operations = document.getElementById('operations').value
+            switch (operations) {
+                case '+':
+                    calc_result = numb1 + numb2;
+                    break;
+                case '-':
+                    calc_result = numb1 - numb2;
+                    break;
+                case '*':
+                    calc_result = numb1 * numb2;
+                    break;
+                case '/':
+                    calc_result = numb1 / numb2;
+                    break;
+            }
+            resultado.innerText = `${numb1} ${operations} ${numb2} = ${calc_result}`
         }
 
-    </script>
-    
+    </script>    
 </body>
 </html>

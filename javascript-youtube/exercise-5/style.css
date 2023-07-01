@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(70, 140, 250);
+    font-family: normal 15pt Arial;
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+section {
+    background-color: azure;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.781);
+    color: black;
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+section div#msg{
+    background-color: azure;
+    min-height: 50px;
+    margin: 10px auto;
+    border: 3px solid black;
+    font-size: 30px;
+}
+
+img {
+    border: solid black;
+    border-radius: 100%;
+}
+
+
+footer {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

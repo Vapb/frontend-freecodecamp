@@ -2,4 +2,4 @@
 
 ## Responsive web design 2/5
 
-## Javascript youtube tutorial 3/6
+## Javascript youtube tutorial 7/8

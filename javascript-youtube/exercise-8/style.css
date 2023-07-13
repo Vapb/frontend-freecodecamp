@@ -22,6 +22,10 @@ section {
     margin-right: auto;
 }
 
+select {
+    width: 80%;
+}
+
 table, td {
     border:1px solid black;
 }
